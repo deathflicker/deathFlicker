@@ -43,7 +43,8 @@ function main(){
 			bishalGud.style.height = "60%";
 			bishalGud.style.width = "100%";
 			mainGud.style.transition = "2s";
-			bishalGud.style.transform = "scale(2)";
+			bishalGud.style.transition = "2s";
+			bishalGud.style.opacity = "1";
 			mainGud.style.width = "18%";
 			mainGud.style.height = "18%";
 			setTimeout(mainSub, 3000);
@@ -51,6 +52,7 @@ function main(){
 	}
 }
 
+//Works as a timer
 function mainSub(){
 	scrollBody.setAttribute("onscroll", "showCake()");
 	scrollBody.style.overflowY = "scroll";
@@ -58,6 +60,9 @@ function mainSub(){
 	mainGud.style.display = "none";
 }
 
+
+
+// Second step in webpage, will show cake
 function showCake(){
 	
 }
