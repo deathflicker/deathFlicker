@@ -44,7 +44,7 @@ function main(){
 			bishalGud.style.width = "100%";
 			mainGud.style.transition = "2s";
 			bishalGud.style.transform = "scale(2)";
-			mainGud.style.width = "0%";
+			mainGud.style.width = "18%";
 			mainGud.style.height = "18%";
 			setTimeout(mainSub, 3000);
 		}
@@ -55,6 +55,7 @@ function mainSub(){
 	scrollBody.setAttribute("onscroll", "showCake()");
 	scrollBody.style.overflowY = "scroll";
 	bishalGudDiv.style.display = "none";
+	mainGud.style.display = "none";
 }
 
 function showCake(){

@@ -19,6 +19,7 @@ body{
 	height: 30%;
 	transition: 0.5s;
 	color: red;
+	position: inherit;
 }
 
 #scrollBody{
@@ -89,6 +90,8 @@ body{
 }
 
 #bishalGudDiv img{
+	position: inherit;
+	left: -1%;
 	width: 0%;
 	height: 0%;
 	transition: 0.5s;
