@@ -10,6 +10,8 @@ var mainGud = document.getElementById('mainGud');
 var loadingAnim = document.getElementById('loadingAnim');
 var scrollBody = document.getElementById('scrollBody');
 var currentDegree = 0;
+var bishalGudDiv = document.getElementById('bishalGudDiv');
+var bishalGud = document.getElementById('bishalGud');
 
 
 
@@ -33,13 +35,28 @@ function main(){
 	if (currentDegree<=90) 
 	{
 		mainGud.style.transform = "rotate("+currentDegree+"deg)";
-		console.log(scrollBody.scrollTop,currentDegree);
 	}
 	else{
 		scrollBody.style.overflowY = "hidden";
 		scrollBody.scrollTop = 0;
+		if(currentDegree>=90){
+			bishalGud.style.height = "60%";
+			bishalGud.style.width = "100%";
+			mainGud.style.transition = "2s";
+			bishalGud.style.transform = "scale(2)";
+			mainGud.style.width = "0%";
+			mainGud.style.height = "18%";
+			setTimeout(mainSub, 3000);
+		}
 	}
 }
 
+function mainSub(){
+	scrollBody.setAttribute("onscroll", "showCake()");
+	scrollBody.style.overflowY = "scroll";
+	bishalGudDiv.style.display = "none";
+}
 
-
+function showCake(){
+	
+}
