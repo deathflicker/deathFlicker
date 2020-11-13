@@ -1,109 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<title>Choto Rendi</title>
+	<title>COMPANY</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js" async></script>
 </head>
-
-<!-- User Scalable = No --> 
-<body scroll="no" style="overflow: hidden">
-<meta 
-     name='viewport' 
-     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
-/>
-<!-- User Scalable Ends -->
+<body onscroll="bodyScroll()">
 
 
-<!-- main body -->
-<div id="mainBody">
-	<img id="mainGud" src="gudLogo.png" alt="Refresh the browser.">
-</div>
+    <!--Header containes logo and menus-->
+	<header>
 
-<!-- User will scroll here for more images -->
-<div id="scrollBody" class="dummyText" onscroll="main()">
-	<label disabled="">A well-organized paragraph supports or develops a single controlling idea, which is expressed in a sentence called the topic sentence. A topic sentence has several important functions: it substantiates or supports an essay’s thesis statement; it unifies the content of a paragraph and directs the order of the sentences; and it advises the reader of the subject to be discussed and how the paragraph will discuss it. Readers generally look to the first few sentences in a paragraph to determine the subject and perspective of the paragraph. That’s why it’s often best to put the topic sentence at the very beginning of the paragraph. In some cases, however, it’s more effective to place another sentence before the topic sentence—for example, a sentence linking the current paragraph to the previous one, or one providing background information.
+        <!--The logo-->
+		<div id="logoHolder">
+			<img src="testLogo.png" id="companyLogo">
+		</div>
 
-Although most paragraphs should have a topic sentence, there are a few situations when a paragraph might not need a topic sentence. For example, you might be able to omit a topic sentence in a paragraph that narrates a series of events, if a paragraph continues developing an idea that you introduced (with a topic sentence) in the previous paragraph, or if all the sentences and details in a paragraph clearly refer—perhaps indirectly—to a main point. The vast majority of your paragraphs, however, should have a topic sentence.A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
+        <!--Menus-->
+		<div id="allMenuHolder">
+            <label onclick="buttonPress('Home')">Home</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label onclick="buttonPress('Services')">Services</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>Portfolio</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <label>About</label>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<label>Reach Us</label>
+		</div>
+    </header>
 
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-
-A well-organized paragraph supports or develops a single controlling idea, which is expressed in a sentence called the topic sentence. A topic sentence has several important functions: it substantiates or supports an essay’s thesis statement; it unifies the content of a paragraph and directs the order of the sentences; and it advises the reader of the subject to be discussed and how the paragraph will discuss it. Readers generally look to the first few sentences in a paragraph to determine the subject and perspective of the paragraph. That’s why it’s often best to put the topic sentence at the very beginning of the paragraph. In some cases, however, it’s more effective to place another sentence before the topic sentence—for example, a sentence linking the current paragraph to the previous one, or one providing background information.
-
-Although most paragraphs should have a topic sentence, there are a few situations when a paragraph might not need a topic sentence. For example, you might be able to omit a topic sentence in a paragraph that narrates a series of events, if a paragraph continues developing an idea that you introduced (with a topic sentence) in the previous paragraph, or if all the sentences and details in a paragraph clearly refer—perhaps indirectly—to a main point. The vast majority of your paragraphs, however, should have a topic sentence.A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.
-
-Paragraphs can contain many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration of a general point. It might describe a place, character, or process; narrate a series of events; compare or contrast two or more things; classify items into categories; or describe causes and effects. Regardless of the kind of information they contain, all paragraphs share certain characteristics. One of the most important of these is a topic sentence.
-</label>
-</div>
-<!-- User scroll portion ends -->
+    <!--Company Description containing info about web developement-->
+    <div id="companyDesc">
+        <img src="1.png" alt="" id="img1">
+        <img src="2.png" alt="" id="img2">
+        <img src="3.png" alt="" id="img3">
+        <img src="4.png" alt="" id="img4">
+    </div>
 
 
-<!-- Bishal gud like face -->
-<div id="bishalGudDiv">
-	<img id="bishalGud" src="bishalGudMukh.jpg" alt="Refresh the website">
-</div>
-<!-- Bishal gud like face ends -->
+    <!--Main Body-->
+    <div id="secondPart">
+
+        <!--Services-->
+        <div id="servicesCont">
+            <div id="website">
+                <label style="font-size: 300%; color: #e74c3c; font-weight: bold; width: 100%; position: inherit; margin-left: 10%;">Website</label>
+                <br>
+                <br>
+                <p style="text-align: left; padding-left: 15%; padding-right: 15%; color: #34495e;">      
+                    <label style="font-size: 150%; width: 50%;">We have a developement experience of over 5years. Get your project done by one of our finest developers. Our programmers use the latest technologies and frameworks as per the need. <br><br>We offer-<br><br><a style="color: #e74c3c;">></a> Responsive Web Designs<br><br><a style="color: #e74c3c;">></a> Ecommerce Website<br><br><a style="color: #e74c3c;">></a> Ui/Ux Designs<br><br><a style="color: #e74c3c;">></a> Logo Designs<br><br><a style="color: #e74c3c;">></a> Template Designs<br></label>
+                </p>
+                <br>
+                <p style="text-align: right; padding-right: 10%; padding-top: 2%;">
+                    <label style="background-color: #e74c3c; color: white; padding: 2%; cursor: pointer;">Contact Us</label>
+                </p>
+            </div>
+            
+            <!--------------------------------------------->
+            
+            
+            <!--------------------------------------------->
+            <div id="webApp" style="transition: 2.5s;">
+                <label style="font-size: 300%; color: #9b59b6; font-weight: bold; width: 100%; position: inherit; margin-left: 10%;">Web App</label>
+                <br>
+                <br>
+                <p style="text-align: left; padding-left: 15%; padding-right: 15%; color: #34495e;">
+                    <label style="font-size: 150%;">These are lightweight yet as powerful as native apps. Our team will help you in making Progressive Web-Apps with Database Connectivity and much more.<br><br>We offer-<br><br><a style="color: #9b59b6;">></a> Progressive Web Apps<br><br><a style="color: #9b59b6;">></a> Ecommerce App<br><br><a style="color: #9b59b6;">></a> Database Connectivity<br><br><a style="color: #9b59b6;">></a> SMS / Email Verification<br><br><a style="color: #9b59b6;">></a> Complex Web Apps</label>
+                </p>
+                <br>
+                <p style="text-align: right; padding-right: 10%; padding-top: 2%;">
+                    <label style="background-color: #9b59b6; color: white; padding: 2%; cursor: pointer;">Contact Us</label>
+                </p>
+            </div>
+
+            <!-------------------------------------------->
 
 
+            <!-------------------------------------------->
+            <div id="hosting" style="transition: 3s;">
+                <label style="font-size: 300%; color: #ff9f43; font-weight: bold; width: 100%; position: inherit; margin-left: 10%;">Hosting</label>
+                <br>
+                <br>
+                <p style="text-align: left; padding-left: 15%; padding-right: 15%; color: #34495e;">
+                    <label style="font-size: 150%;">These are lightweight yet as powerful as native apps. Our team will help you in making Progressive Web-Apps with Database Connectivity and much more.<br><br>We offer-<br><br><a style="color: #ff9f43;">></a> Progressive Web Apps<br><br><a style="color: #ff9f43;">></a> Ecommerce App<br><br><a style="color: #ff9f43;">></a> Database Connectivity<br><br><a style="color: #ff9f43;">></a> SMS / Email Verification<br><br><a style="color: #ff9f43;">></a> Complex Web Apps</label>
+                </p>
+                <br>
+                <p style="text-align: right; padding-right: 10%; padding-top: 2%;">
+                    <label style="background-color: #ff9f43; color: white; padding: 2%; cursor: pointer;">Contact Us</label>
+                </p>
+            </div>
 
-<!-- Loading anim parent container -->
-<div id="loadingAnim">
-	<!-- Loading anim child container -->
-	<div id="loadingAnim2">
-		<!-- Loading animation-->
-		<img src="loading.gif" id="mainLogo" style="width: 80%;">
-	</div>
-	<a>Loading...</a>
-</div>
 
+            <div id="seo" style="transition: 3.5s;">
+
+            </div>
+            <div id="cPannel" style="transition: 4s;">
+
+            </div>
+            <div id="android" style="transition: 4.5s;">
+
+            </div>
+        </div>
+
+
+        <!--A casual space-->
+        <br>
+
+        <hr>
+        <br>
+
+
+        <!--About Us-->
+        <div id="aboutCont">
+
+        </div>
+
+        <br>
+        <br>
+    </div>
 
 
 </body>
-
-
-<!-- Linking JavaScript File -->
-<script type="text/javascript" src="index.js"></script>
 </html>

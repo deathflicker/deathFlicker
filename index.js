@@ -1,68 +1,81 @@
+var img1 = document.getElementById('img1');
+var img2 = document.getElementById('img2');
+var img3 = document.getElementById('img3');
+var img4 = document.getElementById('img4');
+var servicesCont = document.getElementById('servicesCont');
+var website = document.getElementById('website');
+var webApp = document.getElementById('webApp');
+var hosting = document.getElementById('hosting');
+var seo = document.getElementById('seo');
+var cPannel = document.getElementById('cPannel');
+var android = document.getElementById('android');
 
-// After whole document loads run this jQuery
-$(document).ready(function(){
-	setTimeout(removeAnim, 100);
-});
+var whichOne = 0;
 
-/*********************************************************/
-// all variables below
-var mainGud = document.getElementById('mainGud');
-var loadingAnim = document.getElementById('loadingAnim');
-var scrollBody = document.getElementById('scrollBody');
-var currentDegree = 0;
-var bishalGudDiv = document.getElementById('bishalGudDiv');
-var bishalGud = document.getElementById('bishalGud');
+function changeSlide(){
+    whichOne+=1;
+    console.log(whichOne);
+    if(whichOne==1){
+        img1.style.opacity=1;
+        img2.style.opacity=0;
+        img3.style.opacity=0;
+        img4.style.opacity=0;
+    }
+    else if(whichOne==2){
+        img1.style.opacity=0;
+        img2.style.opacity=1;
+        img3.style.opacity=0;
+        img4.style.opacity=0;
+    }
+    else if(whichOne==3){
+        img1.style.opacity=0;
+        img2.style.opacity=0;
+        img3.style.opacity=1;
+        img4.style.opacity=0;
+    }
+    else{
+        whichOne=0;
+        img1.style.opacity=0;
+        img2.style.opacity=0;
+        img3.style.opacity=0;
+        img4.style.opacity=1;
+    }
+    setTimeout(changeSlide, 5000);
+}
 
 
+setTimeout(changeSlide,0);
 
 
-/**********************************************************/
-//removes loading animation after page is properly loaded
-function removeAnim(){
-	loadingAnim.style.display = 'none';
+function buttonPress(whichButton){
+    if(whichButton=='Services'){
+        servicesCont.scrollIntoView();
+        website.style.marginLeft='0%';
+        webApp.style.marginLeft='0%';
+        hosting.style.marginLeft='0%';
+        seo.style.marginLeft='0%';
+        cPannel.style.marginLeft='0%';
+        android.style.marginLeft='0%';
+    }
 }
 
 
 
-
-/********************************************************/
-//required functions below
-
-
-//all stuffs will start from here, i.e. main function
-function main(){
-	currentDegree += 5;
-	if (currentDegree<=90) 
-	{
-		mainGud.style.transform = "rotate("+currentDegree+"deg)";
-	}
-	else{
-		scrollBody.style.overflowY = "hidden";
-		scrollBody.scrollTop = 0;
-		if(currentDegree>=90){
-			bishalGud.style.height = "60%";
-			bishalGud.style.width = "100%";
-			mainGud.style.transition = "2s";
-			bishalGud.style.transition = "2s";
-			bishalGud.style.opacity = "1";
-			mainGud.style.width = "18%";
-			mainGud.style.height = "18%";
-			setTimeout(mainSub, 3000);
-		}
-	}
-}
-
-//Works as a timer
-function mainSub(){
-	scrollBody.setAttribute("onscroll", "showCake()");
-	scrollBody.style.overflowY = "scroll";
-	bishalGudDiv.style.display = "none";
-	mainGud.style.display = "none";
-}
-
-
-
-// Second step in webpage, will show cake
-function showCake(){
-	
+function bodyScroll(){
+    if(window.pageYOffset>100){
+        website.style.marginLeft='0%';
+        webApp.style.marginLeft='0%';
+        hosting.style.marginLeft='0%';
+        seo.style.marginLeft='0%';
+        cPannel.style.marginLeft='0%';
+        android.style.marginLeft='0%';
+    }
+    else{
+        website.style.marginLeft='-100%';
+        webApp.style.marginLeft='-100%';
+        hosting.style.marginLeft='-100%';
+        seo.style.marginLeft='-100%';
+        cPannel.style.marginLeft='-100%';
+        android.style.marginLeft='-100%';
+    }
 }
